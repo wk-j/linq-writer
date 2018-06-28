@@ -12,8 +12,9 @@ namespace LinqWriter {
             Console.WriteLine("{1} [{0}]", string.Join(", ", source), title);
             return source;
         }
-        public static void Write<T>(this List<T> source, string title = "") {
+        public static List<T> Write<T>(this List<T> source, string title = "") {
             Console.WriteLine("{1} [{0}]", string.Join(", ", source), title);
+            return source;
         }
     }
 }
